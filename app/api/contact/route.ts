@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server"
-
+import { Resend } from 'resend';
 export async function POST(request: NextRequest) {
   try {
     const { name, email, subject, message } = await request.json()
@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const resendResponse = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+        Authorization: `Bearer${process.env.RESEND_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
