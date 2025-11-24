@@ -89,8 +89,8 @@ export default function Portfolio() {
   const skills = {
     frontend: [
       { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
+      { name: "Next.js", level: 95 },
+      { name: "TypeScript", level: 70 },
       { name: "Tailwind CSS", level: 85 },
       { name: "JavaScript", level: 90 },
     ],
@@ -102,11 +102,11 @@ export default function Portfolio() {
       { name: "REST APIs", level: 85 },
     ],
     ml: [
-      { name: "Python", level: 70 },
+      { name: "Python", level: 95 },
       { name: "TensorFlow", level: 60 },
       { name: "Scikit-learn", level: 65 },
       { name: "Data Analysis", level: 70 },
-      { name: "Pandas", level: 65 },
+      { name: "Pandas", level: 80 },
     ],
   }
 
@@ -266,21 +266,21 @@ export default function Portfolio() {
                 variant="secondary"
                 className="bg-emerald-900/50 text-emerald-300 border-emerald-700 hover:bg-emerald-800/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25"
               >
-                <Sparkles className="mr-1" size={14} />
+                <Sparkles className="mr-1" size={30} />
                 Frontend Specialist
               </Badge>
               <Badge
                 variant="secondary"
                 className="bg-cyan-900/50 text-cyan-300 border-cyan-700 hover:bg-cyan-800/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/25"
               >
-                <Database className="mr-1" size={14} />
+                <Database className="mr-1" size={30} />
                 Backend Developer
               </Badge>
               <Badge
                 variant="secondary"
                 className="bg-orange-900/50 text-orange-300 border-orange-700 hover:bg-orange-800/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25"
               >
-                <Brain className="mr-1" size={14} />
+                <Brain className="mr-1" size={30} />
                 ML Enthusiast
               </Badge>
             </div>
@@ -402,7 +402,7 @@ export default function Portfolio() {
                   {skills.frontend.map((skill, index) => (
                     <div key={skill.name} className="group/skill">
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium group-hover/skill:text-emerald-300 transition-colors duration-300">
+                        <span className="text-sm font-medium group-hover/skill:text-emerald-300 transition-colors duration-300 text-white">
                           {skill.name}
                         </span>
                         <span className="text-sm text-slate-400">{skill.level}%</span>
@@ -441,7 +441,7 @@ export default function Portfolio() {
                   {skills.backend.map((skill, index) => (
                     <div key={skill.name} className="group/skill">
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium group-hover/skill:text-cyan-300 transition-colors duration-300">
+                        <span className="text-sm font-medium group-hover/skill:text-cyan-300 transition-colors duration-300  text-white">
                           {skill.name}
                         </span>
                         <span className="text-sm text-slate-400">{skill.level}%</span>
@@ -480,7 +480,7 @@ export default function Portfolio() {
                   {skills.ml.map((skill, index) => (
                     <div key={skill.name} className="group/skill">
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium group-hover/skill:text-orange-300 transition-colors duration-300">
+                        <span className="text-sm font-medium group-hover/skill:text-orange-300 transition-colors duration-300 text-white">
                           {skill.name}
                         </span>
                         <span className="text-sm text-slate-400">{skill.level}%</span>
