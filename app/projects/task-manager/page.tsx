@@ -156,7 +156,7 @@ export default function TaskManager() {
                 variant={filter === status ? "default" : "outline"}
                 onClick={() => setFilter(status)}
                 className={
-                  filter === status ? "bg-emerald-600 hover:bg-emerald-700" : "border-slate-600 hover:bg-slate-800"
+                  filter === status ? "bg-emerald-600 hover:bg-emerald-700" : "border-slate-600 hover:bg-slate-800 text-black"
                 }
               >
                 {status.charAt(0).toUpperCase() + status.slice(1).replace("-", " ")}
@@ -203,8 +203,9 @@ export default function TaskManager() {
                           size="sm"
                           onClick={() =>
                             updateTaskStatus(task.id, task.status === "pending" ? "in-progress" : "completed")
+                            
                           }
-                          className="bg-emerald-600 hover:bg-emerald-700"
+                          className="bg-balck hover:bg-emerald-700 "
                         >
                           {task.status === "pending" ? "Start" : "Complete"}
                         </Button>
