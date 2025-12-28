@@ -131,6 +131,27 @@ export default function Portfolio() {
     //   id: "ecommerce",
     // },
     {
+      title:"Trade_connect App",
+      description:"sell product online",
+      tech:["Next.js", "TypeScript", "Convex as Baas"],
+      image:"Screenshot_27-12-2025_223749_trade-connect-v1.vercel.app.jpeg",
+      github:"https://github.com/wasihunmelkamu/trade_connect_v1",
+      live:"https://trade-connect-v1.vercel.app/",
+      id:"trade_connect",
+    },
+    ,
+    {title:"Donation_to_charity",
+      description:"donation helps us continue our mission to support those in need",
+      tech:["Next.js", "TypeScript","chapa"],
+      image:"Screenshot_27-12-2025_23936_checkout.chapa.co.jpeg",
+      github:"https://github.com/wasihunmelkamu/donationToCharity",
+      live:"https://donation-to-charity.vercel.app/",
+      id:"donation-to-charity"
+
+
+
+    },
+    {
       title: "Task Management App",
       description: "Collaborative task management with real-time updates using Next.js",
       tech: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
@@ -515,6 +536,7 @@ export default function Portfolio() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
+        
               <Card
                 key={index}
                 className={`bg-slate-800/50 border-slate-700 backdrop-blur-sm hover:border-emerald-500 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/20 group ${
@@ -565,6 +587,7 @@ export default function Portfolio() {
                       size="sm"
                       className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25 group/btn text-white"
                       onClick={() => window.open(project.live, "_blank")}
+                      
                     >
                       <ExternalLink
                         className="mr-2 transition-transform duration-300 group-hover/btn:rotate-12"

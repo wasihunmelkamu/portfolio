@@ -157,7 +157,7 @@ export default function TaskManager() {
                 onClick={() => setFilter(status)}
                 className={
                   filter === status ? "bg-emerald-600 hover:bg-emerald-700" : "border-slate-600 hover:bg-slate-800 text-black"
-                }
+                }p
               >
                 {status.charAt(0).toUpperCase() + status.slice(1).replace("-", " ")}
               </Button>
