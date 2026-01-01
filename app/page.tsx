@@ -139,13 +139,8 @@ export default function Portfolio() {
       live:"https://trade-connect-v1.vercel.app/",
       id:"trade_connect",
     },
-    {title:""
-
-
-
-
-    },
-    ,
+    
+    
     {title:"Donation_to_charity",
       description:"donation helps us continue our mission to support those in need",
       tech:["Next.js", "TypeScript","chapa"],
@@ -568,7 +563,7 @@ export default function Portfolio() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, techIndex) => (
+                    {project?.tech?.map((tech, techIndex) => (
                       <Badge
                         key={tech}
                         variant="secondary"
