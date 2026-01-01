@@ -121,15 +121,15 @@ export default function Portfolio() {
       live: "https://single-center-management.vercel.app/",
       id: "clearance-system",
     },
-    // {
-    //   title: "E-Commerce Platform",
-    //   description: "Full-stack e-commerce solution with React frontend and Node.js backend",
-    //   tech: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-    //   image: "/th.jpg?height=200&width=300",
-    //   github: "https://github.com/wasihunmelkamu/codelover",
-    //   live: "https://single-center-management.vercel.app/",
-    //   id: "ecommerce",
-    // },
+     {
+      title: "E-Commerce Platform",
+      description: "Full-stack e-commerce solution with Next.js",
+      tech: ["Next.js", "TypeScript" ,"Prisma","Stripe"],
+      image: "/th.jpg?height=200&width=300",
+      github: "https://github.com/wasihunmelkamu/gocartPoject",
+      live: "https://gocart-poject.vercel.app/",
+      id: "ecommerce",
+    },
     {
       title:"Trade_connect App",
       description:"sell product online",
@@ -138,6 +138,12 @@ export default function Portfolio() {
       github:"https://github.com/wasihunmelkamu/trade_connect_v1",
       live:"https://trade-connect-v1.vercel.app/",
       id:"trade_connect",
+    },
+    {title:""
+
+
+
+
     },
     ,
     {title:"Donation_to_charity",
