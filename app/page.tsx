@@ -158,7 +158,7 @@ export default function Portfolio() {
       tech: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
       image: "/OIP.jpg?height=200&width=300",
       github: "https://github.com/wasihunmelkam/codelover",
-      live: "/projects/task-manager",
+      live: "https://to-do-list-flax-two-20.vercel.app/",
       id: "task-manager",
     },
     {
